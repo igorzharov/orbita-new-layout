@@ -120,6 +120,8 @@ body {
 }
 
 .link {
+	color: var(--text);
+	text-decoration: none;
 	transition: color .25s ease;
 }
 
