@@ -1,0 +1,33 @@
+.button {
+	display: inline-block;
+	font-weight: bold;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 16px;
+	border-radius: 6px;
+	color: var(--regular-text);
+	text-decoration: none;
+}
+
+.button--gray {
+	background-color: var(--gray);
+	transition: background-color .25s ease, color .25s ease;
+}
+
+.button--gray:hover {
+	background-color: var(--accent);
+	color: #fff;
+}
+
+.button--square {
+	height: 36px;
+	width: 36px;
+}
+
+.button--transparent {
+	transition: background-color .25s ease;
+}
+
+.button--transparent:hover {
+	background-color: var(--gray);
+}
