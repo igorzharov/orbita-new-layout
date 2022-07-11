@@ -41,7 +41,6 @@ body {
 
 /* USER STYLES */
 
-
 .container {
 	max-width: 1400px;
 	padding-left: var(--gutter);
@@ -177,9 +176,15 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	text-indent: var(--gutter);
+	text-indent: calc(var(--gutter) / 2);
 	border: 1px solid var(--gray);
 	border-radius: 6px;
+}
+
+.form-control__submit {
+	width: calc(36px * 2);
+	margin-left: auto;
+	z-index: 1;
 }
 
 .l-container-buttons {
@@ -209,16 +214,10 @@ body {
 	box-shadow: 0 0 0 3px #fff;
 
 	font-weight: bold;
-	font-size: 9px;
+	font-size: 8px;
 	
 	color: #fff;
 	background-color: var(--accent);
-}
-
-.form-control__icon {
-	position: absolute;
-	right: var(--gutter);
-	font-size: 18px;
 }
 
 @media (max-width: 1280px) {
