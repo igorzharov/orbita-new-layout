@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	document.addEventListener('click', function (event) {
 
-		if (!event.target.closest('.catalog-parent-categories__item')) return;
+		if (!event.target.closest('.catalog-parent-categories__item')) {
+			console.log(123);
+			return
+		};
 
 		const catalogCategories = document.querySelectorAll('.catalog-category__content');
 
@@ -29,11 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			item.classList.remove('catalog-category__content--active');
 		})
 
-		event.target.classList.toggle('123');
-
 		const id = event.target.getAttribute('catalog-id');
 
-		console.log(event.target.getAttribute('catalog-id'));
+		console.log(event.target);
 		
 		const catalogCategory = document.querySelector(`[catalog-category="${id}"]`)
 

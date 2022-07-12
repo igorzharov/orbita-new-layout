@@ -37,8 +37,13 @@
 	border-radius: calc(var(--gutter) / 4);
 	transition: background-color ease .25s;
 }
+
 .catalog-parent-categories__item a:hover {
 	background-color: var(--gray);
+}
+
+.catalog-parent-categories__item a * {
+	pointer-events: none;
 }
 
 .catalog-category {
