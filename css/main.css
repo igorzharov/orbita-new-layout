@@ -9,6 +9,24 @@
 	--userfont: mont, sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	--gutter: 24px;
+
+	/* variable button size */
+
+	--button-size: 36px;
+
+	/* variable breakpoints */
+
+	--sm: 576px;
+	--md: 768px;
+	--lg: 860px;
+	--xl: 1200px;
+	--xxl: 1400px;
+}
+
+@media (max-width: 576px) {
+	:root {
+		--button-size: 40px;
+	}
 }
 
 /* FONTS LOAD SECTION */
@@ -140,6 +158,12 @@ body {
 	transition: opacity .25s ease;
 }
 
+@media (max-width: 576px) {
+	.header__logo {
+		font-size: 24px;
+	}
+}
+
 .header__logo:hover {
 	opacity: .8;
 }
@@ -172,11 +196,13 @@ body {
 
 .form-control {
 	position: relative;
-	height: 36px;
+	height: var(--button-size);
 	width: 100%;
 	display: flex;
 	align-items: center;
 }
+
+
 
 .form-control__input {
 	position: absolute;
@@ -190,9 +216,15 @@ body {
 }
 
 .form-control__submit {
-	width: calc(36px * 2);
+	width: calc(var(--button-size) * 2);
 	margin-left: auto;
 	z-index: 1;
+}
+
+@media (max-width: var(--sm)) {
+	.form-control__submit {
+		width: calc(var(--button-size) * 2);
+	}
 }
 
 .l-container-buttons {
