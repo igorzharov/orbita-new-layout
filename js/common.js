@@ -8,15 +8,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	})
 
-	const header__catalog__button = document.querySelector('.header__catalog-button');
+	const headerCatalogButton = document.querySelector('.header__catalog-button');
 
 	const catalog = document.querySelector('.catalog');
 
-	header__catalog__button.addEventListener('click', () => {
+	headerCatalogButton.addEventListener('click', () => {
 
-		header__catalog__button.classList.toggle('header__catalog-button--active');
+		headerCatalogButton.classList.toggle('header__catalog-button--active');
 		catalog.classList.toggle('catalog--active');
 
 	})
+
+	document.addEventListener('click', function (event) {
+
+		if (!event.target.closest('.catalog-parent-categories__item')) return;
+
+		const catalogCategories = document.querySelectorAll('.catalog-category__content');
+
+		catalogCategories.forEach((item) => {
+			item.classList.remove('catalog-category__content--active');
+		})
+
+		event.target.classList.toggle('123');
+
+		const id = event.target.getAttribute('catalog-id');
+
+		console.log(event.target.getAttribute('catalog-id'));
+		
+		const catalogCategory = document.querySelector(`[catalog-category="${id}"]`)
+
+		catalogCategory.classList.add('catalog-category__content--active');
+	
+	});
 
 })

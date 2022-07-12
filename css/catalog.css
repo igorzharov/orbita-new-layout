@@ -49,6 +49,19 @@
 	flex: 1;
 }
 
+.catalog-category__content {
+	display: none;
+	/* opacity: 0;
+	visibility: hidden;
+	transition: opacity .25s ease, visibility .25s ease; */
+}
+
+.catalog-category__content--active {
+	display: block;
+	/* opacity: 1;
+	visibility: visible; */
+}
+
 .catalog-category__title {
 	margin-top: 0;
 	margin-bottom: calc(var(--gutter) * 1.5);
