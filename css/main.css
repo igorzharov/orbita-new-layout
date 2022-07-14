@@ -10,6 +10,8 @@
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	--gutter: 24px;
 
+	--trs: .25s ease;
+
 	/* variable button size */
 
 	--button-size: 36px;
@@ -139,10 +141,22 @@ body {
 }
 
 .link {
+	position: relative;
+	display: inline-block;
 	color: var(--text);
 	text-decoration: none;
 	transition: color .25s ease;
 }
+
+/* .link::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: scale(1.15);
+} */
 
 .link:hover, .link:focus, .link:active {
 	color: var(--accent);
@@ -202,14 +216,13 @@ body {
 	align-items: center;
 }
 
-
-
 .form-control__input {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
+	width: 100%;
 	text-indent: calc(var(--gutter) / 2);
 	border: 1px solid var(--gray);
 	border-radius: 6px;
