@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	hamburger.addEventListener('click', () => {
 
 		hamburger.classList.toggle('header__hamburger--active');
+
 		catalog.classList.toggle('catalog--active');
 
 	})
@@ -67,5 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		catalogCategory.classList.toggle('catalog-category--active');
 
 	});
+
+	const catalogButton = document.querySelector('.catalog__button');
+
+	const catalogCategories = document.querySelector('.catalog__categories');
+
+	catalogButton.addEventListener('click', () => {
+
+		catalogButton.classList.toggle('catalog__button--active');
+
+		catalogCategories.classList.toggle('catalog__categories--active')
+
+	})
 
 })
