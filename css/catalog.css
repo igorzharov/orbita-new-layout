@@ -1,7 +1,11 @@
 .catalog {
+	position: absolute;
+	width: calc(100% - var(--gutter) * 2);
+	background-color: #fff;
+	z-index: 100;
 	padding: 0;
 	margin: 0;
-
+	box-shadow: 0 20px 20px 5px rgba(0,0,0,.1);
 }
 
 .catalog__categories {
@@ -21,9 +25,28 @@
 	align-items: center;
 }
 
+.catalog-child-categories__item {
+	list-style-type: none;
+}
+
+.catalog-child-categories__item a {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
 @media (max-width: 860px) {
 
-	.link:hover {
+	.catalog {
+		width: 100%;
+		left: 0;
+	}
+
+	.catalog__item {
+		padding: 0 calc(var(--gutter) / 2);
+	}
+
+	.link:hover,.link:focus {
 		color: inherit;
 	}
 
@@ -68,6 +91,10 @@
 		height: 100%;
 	}
 
+	.catalog-category__item {
+		padding: 0 calc(var(--gutter) / 2);
+	}
+
 	.catalog__item--active .link {
 		color: var(--accent);
 		font-weight: bold;
@@ -86,17 +113,16 @@
 		padding: 0;
 	}
 
-	.catalog-child-categories__item {
-		margin-bottom: calc(var(--gutter) / 4);
-	}
-
 	.catalog__navigation {
 		padding: 0;
 	}
 
 	.catalog__decoration {
+		position: relative;
 		height: calc(var(--gutter) / 5);
 		background-color: var(--gray);
+		top: -1px;
+		box-shadow: 0 1px 0 1px var(--gray);
 	}
 
 	.catalog__decoration--large {
@@ -108,11 +134,9 @@
 @media (min-width: 860px) {
 
 	.catalog {
-		position: absolute;
-		width: 100%;
 		display: flex;
-		background-color: #fff;
-		z-index: 100;
+		width: 100%;
+		left: 0;
 	}
 
 	.catalog--animation {
@@ -127,7 +151,10 @@
 	}
 
 	.catalog__categories {
-		width: 100%;
+		width: var(--xxl);
+		padding-left: calc(var(--gutter) / 2);
+		padding-right: calc(var(--gutter) / 2);
+		margin: 0 auto;
 	}
 
 	.catalog__item {
@@ -162,6 +189,7 @@
 	
 	.catalog-category {
 		list-style-type: none;
+		overflow-y: auto;
 	}
 
 	.catalog-category {
@@ -204,16 +232,6 @@
 	
 	.catalog-child-categories {
 		padding: 0;
-	}
-	
-	.catalog-child-categories__item {
-		list-style-type: none;
-	}
-	
-	.catalog-child-categories__item a {
-		position: relative;
-		display: inline-block;
-		margin-bottom: 5px;
 	}
 
 	.catalog__button {

@@ -63,12 +63,17 @@ body {
 /* USER STYLES */
 
 .container {
-	position: relative;
 	max-width: 1400px;
 	padding-left: var(--gutter);
 	padding-right: var(--gutter);
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.h3 {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .header {
@@ -309,7 +314,7 @@ body {
 	.l-container-buttons {
 		display: none !important;
 	}
-	
+
 	.header__middle-line {
 		flex-wrap: wrap;
 		gap: calc(var(--gutter) / 2);

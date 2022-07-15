@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			const categories = document.querySelectorAll('.catalog__item');
 
-			categories[0].classList.add('catalog__item--active');
+			categories[1].classList.toggle('catalog__item--active');
 
 			const childCategories = document.querySelectorAll('.catalog-category');
 
-			childCategories[0].classList.add('catalog-category--active');
+			childCategories[0].classList.toggle('catalog-category--active');
 
 		}
 
