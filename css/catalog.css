@@ -1,6 +1,7 @@
 .catalog {
 	padding: 0;
 	margin: 0;
+
 }
 
 .catalog__categories {
@@ -24,6 +25,16 @@
 
 	.link:hover {
 		color: inherit;
+	}
+
+	.catalog--animation {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height var(--trs);
+	}
+	
+	.catalog--active {
+		max-height: 500px;
 	}
 	
 	.catalog__item .link {
@@ -67,6 +78,17 @@
 
 	.catalog {
 		display: flex;
+	}
+
+	.catalog--animation {
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity var(--trs), visibility var(--trs);
+	}
+	
+	.catalog--active {
+		visibility: visible;
+		opacity: 1;
 	}
 
 	.catalog__categories {
