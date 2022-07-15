@@ -21,24 +21,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	document.addEventListener('click', function (event) {
 
-		if (!event.target.closest('.catalog-parent-categories__item')) {
-			console.log(123);
-			return
-		};
+		const categories = document.querySelectorAll('.catalog__item');
 
-		const catalogCategories = document.querySelectorAll('.catalog-category__content');
+		// categories.forEach((item) => {
+		// 	item.classList.remove('catalog__item--active');
+		// })
 
-		catalogCategories.forEach((item) => {
-			item.classList.remove('catalog-category__content--active');
-		})
+		const category = event.target.closest('.catalog__item');
 
-		const id = event.target.getAttribute('catalog-id');
+		const id = category.getAttribute('category-id');
 
-		console.log(event.target);
+		category.classList.toggle('catalog__item--active');
+
+		const childCategories = document.querySelectorAll('.catalog-category');
+
+		// childCategories.forEach((item) => {
+		// 	item.classList.remove('catalog-category--active');
+		// })
 		
-		const catalogCategory = document.querySelector(`[catalog-category="${id}"]`)
+		const catalogCategory = document.querySelector(`[parent-category-id="${id}"]`)
 
-		catalogCategory.classList.add('catalog-category__content--active');
+		catalogCategory.classList.toggle('catalog-category--active');
 	
 	});
 

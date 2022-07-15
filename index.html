@@ -8,7 +8,8 @@
 	<title>Header</title>
 	<meta name="description" content="Header">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="images/favicon.png">
 
@@ -29,7 +30,7 @@
 
 	<header class="header">
 
-		<ul class="container">
+		<div class="container">
 
 			<div class="header__top-line">
 
@@ -69,7 +70,8 @@
 
 							<input type="text" class="form-control__input" placeholder="Искать товары и категории...">
 
-							<button type="submit" class="form-control__submit button button--gray button--square"><i class="fa-solid fa-magnifying-glass"></i></button>
+							<button type="submit" class="form-control__submit button button--gray button--square"><i
+									class="fa-solid fa-magnifying-glass"></i></button>
 
 						</div>
 
@@ -112,11 +114,11 @@
 
 				<ul class="catalog__categories">
 
-					<li class="catalog__item">
-						<a class="link" href=""><span>Мужская одежда</span><i class="fa-solid fa-angle-right"></i></a>
+					<li class="catalog__item" category-id="1">
+						<div class="link"><span>Мужская одежда</span><i class="fa-solid fa-angle-right"></i></div>
 					</li>
 
-					<li class="catalog-category catalog__category catalog-category--active">
+					<li class="catalog-category catalog__category" parent-category-id="1">
 
 						<h3 class="catalog__category-title">
 							<a class="link" href=""><span>Мужская одежда</span><i class="fa-solid fa-angle-right"></i></a>
@@ -187,14 +189,89 @@
 					</li>
 					<!-- /.catalog-category catalog__category -->
 
-					<li class="catalog__item">
-						<a class="link" href=""><span>Женская одежда</span><i class="fa-solid fa-angle-right"></i></a>
+					<li class="catalog__item" category-id="2">
+						<div class="link"><span>Женская одежда</span><i class="fa-solid fa-angle-right"></i></div>
 					</li>
 
-					<li class="catalog-category catalog__category">
+					<li class="catalog-category catalog__category" parent-category-id="2">
 
 						<h3 class="catalog__category-title">
-							<a class="link" href=""><span>Мужская одежда</span><i class="fa-solid fa-angle-right"></i></a>
+							<a class="link" href=""><span>Женская одежда</span><i class="fa-solid fa-angle-right"></i></a>
+						</h3>
+
+						<div class="catalog-category__categories">
+
+							<div class="catalog-category__item">
+
+								<h4 class="catalog-category__title">
+									<a class="link" href=""><span>Мебель</span></a>
+								</h4>
+
+								<ul class="catalog-child-categories catalog-category__child-categories">
+
+									<li class="catalog-child-categories__item"><a class="link" href="">Комоды</a></li>
+									<li class="catalog-child-categories__item"><a class="link" href="">Кровати</a></li>
+									<li class="catalog-child-categories__item"><a class="link" href="">Матрасы</a></li>
+									<li class="catalog-child-categories__item"><a class="link" href="">Мебель для ванной комнаты</a></li>
+
+								</ul>
+
+							</div>
+
+							<div class="catalog-category__item">
+
+								<h4 class="catalog-category__title">
+									<a class="link" href=""><span>Хозтовары</span></a>
+								</h4>
+
+								<ul class="catalog-child-categories catalog-category__child-categories">
+
+									<li class="catalog-child-categories__item"><a class="link" href="">Аксессуары для ванной</a></li>
+									<li class="catalog-child-categories__item"><a class="link" href="">Инвентарь для уборки</a></li>
+									<li class="catalog-child-categories__item"><a class="link" href="">Тряпки, салфетки, губки</a></li>
+
+								</ul>
+
+							</div>
+
+							<div class="catalog-category__item">
+
+								<h4 class="catalog-category__title">
+									<a class="link" href=""><span>Аксессуары для дома</span></a>
+								</h4>
+
+							</div>
+
+							<div class="catalog-category__item">
+
+								<h4 class="catalog-category__title">
+									<a class="link" href=""><span>Сувениры</span></a>
+								</h4>
+
+								<ul class="catalog-child-categories catalog-category__child-categories">
+
+									<li class="catalog-child-categories__item"><a class="link" href="">Вазы</a></li>
+									<li class="catalog-child-categories__item"><a class="link" href="">Часы</a></li>
+									<li class="catalog-child-categories__item"><a class="link" href="">Горшки</a></li>
+
+								</ul>
+
+							</div>
+
+						</div>
+						<!-- /.catalog-category__categories -->
+
+					</li>
+					<!-- /.catalog-category catalog__category -->
+
+					<li class="catalog__item" category-id="3">
+						<div class="link"><span>Детские товары</span><i class="fa-solid fa-angle-right"></i></div>
+					</li>
+
+					<li class="catalog-category catalog__category" parent-category-id="3">
+
+						<h3 class="catalog__category-title">
+							<a class="link" href=""><span>Детские товары</span><i class="fa-solid fa-angle-right"></i></a>
 						</h3>
 
 						<div class="catalog-category__categories">
@@ -263,90 +340,15 @@
 					<!-- /.catalog-category catalog__category -->
 
 					<li class="catalog__item">
-						<a class="link" href=""><span>Детские товары</span><i class="fa-solid fa-angle-right"></i></a>
+						<a class="link" href="#"><span>Прочее</span></a>
 					</li>
 
-					<li class="catalog-category catalog__category">
-
-						<h3 class="catalog__category-title">
-							<a class="link" href=""><span>Мужская одежда</span><i class="fa-solid fa-angle-right"></i></a>
-						</h3>
-
-						<div class="catalog-category__categories">
-
-							<div class="catalog-category__item">
-
-								<h4 class="catalog-category__title">
-									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
-
-								<ul class="catalog-child-categories catalog-category__child-categories">
-
-									<li class="catalog-child-categories__item"><a class="link" href="">Комоды</a></li>
-									<li class="catalog-child-categories__item"><a class="link" href="">Кровати</a></li>
-									<li class="catalog-child-categories__item"><a class="link" href="">Матрасы</a></li>
-									<li class="catalog-child-categories__item"><a class="link" href="">Мебель для ванной комнаты</a></li>
-
-								</ul>
-
-							</div>
-
-							<div class="catalog-category__item">
-
-								<h4 class="catalog-category__title">
-									<a class="link" href=""><span>Хозтовары</span></a>
-								</h4>
-
-								<ul class="catalog-child-categories catalog-category__child-categories">
-
-									<li class="catalog-child-categories__item"><a class="link" href="">Аксессуары для ванной</a></li>
-									<li class="catalog-child-categories__item"><a class="link" href="">Инвентарь для уборки</a></li>
-									<li class="catalog-child-categories__item"><a class="link" href="">Тряпки, салфетки, губки</a></li>
-
-								</ul>
-
-							</div>
-
-							<div class="catalog-category__item">
-
-								<h4 class="catalog-category__title">
-									<a class="link" href=""><span>Аксессуары для дома</span></a>
-								</h4>
-
-							</div>
-
-							<div class="catalog-category__item">
-
-								<h4 class="catalog-category__title">
-									<a class="link" href=""><span>Сувениры</span></a>
-								</h4>
-
-								<ul class="catalog-child-categories catalog-category__child-categories">
-
-									<li class="catalog-child-categories__item"><a class="link" href="">Вазы</a></li>
-									<li class="catalog-child-categories__item"><a class="link" href="">Часы</a></li>
-									<li class="catalog-child-categories__item"><a class="link" href="">Горшки</a></li>
-
-								</ul>
-
-							</div>
-
-						</div>
-						<!-- /.catalog-category__categories -->
-
-					</li>
-					<!-- /.catalog-category catalog__category -->
-
-					<li class="catalog__item">
-						<a class="link" href=""><span>Прочее</span></a>
-					</li>
-					
 				</ul>
 
-				</ul>
-				<!-- /.catalog header__catalog -->
+			</ul>
+			<!-- /.catalog header__catalog -->
 
-				</div>
+		</div>
 
 	</header>
 

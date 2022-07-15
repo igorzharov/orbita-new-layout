@@ -28,6 +28,7 @@
 @media (max-width: 576px) {
 	:root {
 		--button-size: 40px;
+		--gutter: 16px;
 	}
 }
 
@@ -145,6 +146,7 @@ body {
 	display: inline-block;
 	color: var(--text);
 	text-decoration: none;
+	cursor: pointer;
 	transition: color .25s ease;
 }
 
