@@ -75,7 +75,7 @@
 
 	.catalog__item--active i {
 		transform: rotate(90deg);
-		margin-right: 4px;
+		margin-right: 2px;
 	}
 
 	.catalog__category-title {
