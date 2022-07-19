@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const catalog = document.querySelector('.catalog');
 
+	const bottomNav = document.querySelector('.bottom-nav');
+
 	hamburger.addEventListener('click', () => {
 
 		hamburger.classList.toggle('c-header__hamburger--active');
@@ -11,10 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		catalog.classList.toggle('catalog--active');
 
 		document.body.style.overflowY = 'scroll'
+		bottomNav.style.opacity = '1';
+		bottomNav.style.visibility = 'visible';
 
 		if (catalog.classList.contains('catalog--active')) {
 
 			document.body.style.overflowY = 'hidden'
+
+			bottomNav.style.opacity = '0';
+			bottomNav.style.visibility = 'hidden';
 
 		}
 
