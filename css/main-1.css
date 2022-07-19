@@ -1,3 +1,7 @@
 .bottom-nav {
-	height: 65px;
+	height: 68px;
+}
+
+.bottom-nav__icon {
+	font-size: 18px;
 }
