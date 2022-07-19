@@ -435,6 +435,7 @@ body {
 }
 
 .button--square {
+	display: flex;
 	line-height: normal;
 	padding: 0;
 	height: var(--button-size);
