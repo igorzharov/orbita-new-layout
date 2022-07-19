@@ -1,4 +1,8 @@
 .bottom-nav {
+	bottom: 5px;
+	left: 5px;
+	padding: 0 var(--gutter);
+	width: calc(100% - 10px);
 	height: 68px;
 }
 
