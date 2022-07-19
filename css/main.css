@@ -436,6 +436,8 @@ body {
 
 .button--square {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	line-height: normal;
 	padding: 0;
 	height: var(--button-size);
@@ -506,12 +508,11 @@ body {
 
 	.bottom-nav {
 		position: fixed;
-		bottom: 10px;
-		left: 10px;
+		bottom: 0;
+		left: 0;
 		padding: 0 var(--gutter);
-		border-radius: calc(var(--gutter) / 1.5);
-		height: 80px;
-		width: calc(100% - 20px);
+		height: 65px;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
