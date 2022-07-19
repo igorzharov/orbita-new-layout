@@ -532,7 +532,7 @@ body {
 	}
 
 	.bottom-nav__icon-counter {
-		right: -16px;
+		right: -14px;
 		box-shadow: 0 0 0 2px var(--gray);
 	}
 
