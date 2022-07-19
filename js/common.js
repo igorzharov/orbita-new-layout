@@ -1,22 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-	const hamburger = document.querySelector('.header__hamburger');
+	const hamburger = document.querySelector('.c-header__hamburger');
 
 	const catalog = document.querySelector('.catalog');
 
 	hamburger.addEventListener('click', () => {
 
-		hamburger.classList.toggle('header__hamburger--active');
+		hamburger.classList.toggle('c-header__hamburger--active');
 
 		catalog.classList.toggle('catalog--active');
 
+		document.body.style.overflowY = 'scroll'
+
+		if (catalog.classList.contains('catalog--active')) {
+
+			document.body.style.overflowY = 'hidden'
+
+		}
+
 	})
 
-	const headerCatalogButton = document.querySelector('.header__catalog-button');
+	const headerCatalogButton = document.querySelector('.c-header__catalog-button');
 
 	headerCatalogButton.addEventListener('click', () => {
 
-		headerCatalogButton.classList.toggle('header__catalog-button--active');
+		headerCatalogButton.classList.toggle('c-header__catalog-button--active');
 		catalog.classList.toggle('catalog--active');
 
 		if (window.matchMedia("(min-width: 860px)").matches) {

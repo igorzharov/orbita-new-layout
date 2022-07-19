@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 
 	<title>Header</title>
-	<meta name="description" content="Header">
+	<meta name="description" content="c-header">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -14,14 +14,7 @@
 
 	<link rel="stylesheet" href="libs/normalize.css/normalize.css">
 
-	<link rel="stylesheet" href="css/hamburger.css">
-	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/catalog.css">
-	<link rel="stylesheet" href="css/section.css">
-	<link rel="stylesheet" href="css/category-card.css">
-
-	<link rel="stylesheet" href="css/media.css">
 
 	<script src="https://kit.fontawesome.com/c662384fd2.js" crossorigin="anonymous"></script>
 
@@ -29,49 +22,49 @@
 
 <body>
 
-	<header class="header">
+	<header class="c-header">
 
-		<div class="container">
+		<div class="c-container">
 
-			<div class="header__top-line">
+			<div class="c-header__top-line">
 
-				<a href="tel:73517010493" class="header__phone link">+7 (351) 701 04 93</a>
+				<a href="tel:73517010493" class="c-header__phone link">+7 (351) 701 04 93</a>
 
-				<nav class="header-nav">
+				<nav class="c-header-nav">
 
 					<ul>
 
-						<li class="header-nav__item header-nav__item--active"><a class="link" href="#">Схема торгового комплекса</a>
+						<li class="c-header-nav__item c-header-nav__item--active"><a class="link" href="#">Схема торгового комплекса</a>
 						</li>
-						<li class="header-nav__item"><a class="link" href="#">Акции</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Как заказать?</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Контакты</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Аренда</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Акции</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Как заказать?</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Контакты</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Аренда</a></li>
 
 					</ul>
 
 				</nav>
 
 			</div>
-			<!-- /.header__top-line -->
+			<!-- /.c-header__top-line -->
 
-			<div class="header__middle-line">
+			<div class="c-header__middle-line">
 
-				<div class="header__hamburger"><span></span><span></span><span></span></div>
+				<div class="c-header__hamburger"><span></span><span></span><span></span></div>
 
-				<a href="/" class="header__logo">Тк Орбита</a>
+				<a href="/" class="c-header__logo">Тк Орбита</a>
 
-				<div class="header__catalog-button button button--gray">Каталог</div>
+				<div class="c-header__catalog-button button button--gray">Каталог</div>
 
-				<div class="header__search">
+				<div class="c-header__search">
 
-					<form class="form-search" action="#" method="post">
+					<form class="c-form-search" action="#" method="post">
 
-						<div class="form-control">
+						<div class="c-form-control">
 
-							<input type="text" class="form-control__input" placeholder="Искать товары и категории...">
+							<input type="text" class="c-form-control__input" placeholder="Искать товары и категории...">
 
-							<button type="submit" class="form-control__submit button button--gray button--square"><i class="fa-solid fa-magnifying-glass"></i></button>
+							<button type="submit" class="c-form-control__submit button button--gray button--square"><i class="fa-solid fa-magnifying-glass"></i></button>
 
 						</div>
 
@@ -81,7 +74,7 @@
 
 				<div class="l-container-buttons">
 
-					<a href="/" class="header__button header-button-comparison button button--square button--transparent">
+					<a href="/" class="c-header__button c-header-button-comparison button button--square button--transparent">
 
 						<i class="fa-solid fa-arrow-right-arrow-left"></i>
 
@@ -89,7 +82,7 @@
 
 					</a>
 
-					<a href="/" class="header__button header-button-like button button--square button--transparent">
+					<a href="/" class="c-header__button c-header-button-like button button--square button--transparent">
 
 						<i class="fa-solid fa-heart"></i>
 
@@ -97,7 +90,7 @@
 
 					</a>
 
-					<a href="/" class="header__button header-button-cart button button--square button--transparent">
+					<a href="/" class="c-header__button c-header-button-cart button button--square button--transparent">
 
 						<i class="fa-solid fa-cart-shopping"></i>
 
@@ -108,9 +101,9 @@
 				</div>
 
 			</div>
-			<!-- /.header__middle-line -->
+			<!-- /.c-header__middle-line -->
 
-			<ul class="catalog catalog--animation header__catalog">
+			<ul class="catalog catalog--animation c-header__catalog">
 
 				<div class="catalog__item catalog__button">
 					<div class="link"><span>Каталог</span><i class="fa-solid fa-angle-down"></i></div>
@@ -124,17 +117,17 @@
 
 					<li class="catalog-category catalog__category" parent-category-id="1">
 
-						<h3 class="catalog__category-title">
+						<div class="catalog__category-title h4">
 							<a class="link" href=""><span>Мужская одежда</span><i class="fa-solid fa-angle-right"></i></a>
-						</h3>
+						</div>
 
 						<div class="catalog-category__categories">
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -149,9 +142,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -166,9 +159,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -183,9 +176,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -200,9 +193,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -217,9 +210,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -234,9 +227,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Хозтовары</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -250,17 +243,17 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Аксессуары для дома</span></a>
-								</h4>
+								</div>
 
 							</div>
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Сувениры</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -284,17 +277,17 @@
 
 					<li class="catalog-category catalog__category" parent-category-id="2">
 
-						<h3 class="catalog__category-title">
+						<div class="catalog__category-title h4">
 							<a class="link" href=""><span>Женская одежда</span><i class="fa-solid fa-angle-right"></i></a>
-						</h3>
+						</div>
 
 						<div class="catalog-category__categories">
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -309,9 +302,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Хозтовары</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -325,17 +318,17 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Аксессуары для дома</span></a>
-								</h4>
+								</div>
 
 							</div>
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Сувениры</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -359,17 +352,17 @@
 
 					<li class="catalog-category catalog__category" parent-category-id="3">
 
-						<h3 class="catalog__category-title">
+						<div class="catalog__category-title h4">
 							<a class="link" href=""><span>Детские товары</span><i class="fa-solid fa-angle-right"></i></a>
-						</h3>
+						</div>
 
 						<div class="catalog-category__categories">
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Мебель</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -384,9 +377,9 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Хозтовары</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -400,17 +393,17 @@
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Аксессуары для дома</span></a>
-								</h4>
+								</div>
 
 							</div>
 
 							<div class="catalog-category__item">
 
-								<h4 class="catalog-category__title">
+								<div class="catalog-category__title h5">
 									<a class="link" href=""><span>Сувениры</span></a>
-								</h4>
+								</div>
 
 								<ul class="catalog-child-categories catalog-category__child-categories">
 
@@ -503,8 +496,6 @@
 
 				</ul>
 
-				<div class="catalog__decoration"></div>
-
 				<div class="catalog__decoration catalog__decoration--large"></div>
 
 				<ul class="catalog__navigation">
@@ -524,29 +515,29 @@
 			</ul>
 			<!-- /.catalog header__catalog -->
 
-			<div class="header__bottom-line">
+			<div class="c-header__bottom-line">
 
-				<nav class="header-nav header-nav--full">
+				<nav class="c-header-nav c-header-nav--full">
 
 					<ul>
 
-						<li class="header-nav__item header-nav__item--active"><a class="link" href="#">Мужская одежда</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Женская одежда</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Детские товары</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Сад и огород</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Спорт и отдых</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Автотовары</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Женская одежда</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Детские товары</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Сад и огород</a></li>
-						<li class="header-nav__item"><a class="link" href="#">Женская одежда</a></li>
+						<li class="c-header-nav__item c-header-nav__item--active"><a class="link" href="#">Мужская одежда</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Женская одежда</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Детские товары</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Сад и огород</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Спорт и отдых</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Автотовары</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Женская одежда</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Детские товары</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Сад и огород</a></li>
+						<li class="c-header-nav__item"><a class="link" href="#">Женская одежда</a></li>
 
 					</ul>
 
 				</nav>
 
 			</div>
-			<!-- /.header__bottom-line -->
+			<!-- /.c-header__bottom-line -->
 
 		</div>
 
@@ -554,7 +545,7 @@
 
 	<section class="section">
 
-		<div class="container">
+		<div class="c-container">
 
 			<div class="categories-grid">
 
