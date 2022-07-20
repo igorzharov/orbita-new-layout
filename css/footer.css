@@ -1,0 +1,13 @@
+footer {
+	height: 300px;
+	background-color: var(--text);
+	display: flex;
+}
+
+.wrap {
+	font-size: 32px;
+	color: #fff;
+	margin: auto;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+}

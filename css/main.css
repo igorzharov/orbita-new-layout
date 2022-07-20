@@ -2,6 +2,7 @@
 
 :root {
 	--accent: #e31e24;
+	--accentRGB: 227, 30, 36;
 	--text: #212121;
 	--gray: #ebebeb;
 	--regular-text: 14px;
@@ -68,6 +69,24 @@ body {
 	padding-right: var(--gutter);
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.h2 {
+	display: block;
+	font-size: 1.9em;
+	font-weight: bold;
+	margin-bottom: calc(var(--gutter) / 2);
+}
+
+@media (max-width: 860px) {
+	.h2 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
 }
 
 .h3 {
@@ -416,6 +435,7 @@ body {
 	color: var(--regular-text);
 	text-decoration: none;
 	cursor: pointer;
+	text-align: center;
 }
 
 .button--icon {
@@ -492,20 +512,6 @@ body {
 
 @media (max-width: 860px) {
 
-	footer {
-		height: 300px;
-		background-color: var(--text);
-		display: flex;
-	}
-
-	.wrap {
-		font-size: 32px;
-		color: #fff;
-		margin: auto;
-		letter-spacing: 0.5em;
-		text-transform: uppercase;
-	}
-
 	.bottom-nav {
 		position: fixed;
 		bottom: 0;
@@ -540,6 +546,8 @@ body {
 
 	.bottom-nav__text {
 		font-size: 13px;
+		margin-top: -4px;
+		display: none;
 	}
 
 	.bottom-nav__item--active .bottom-nav__text {
@@ -952,4 +960,115 @@ body {
 
 .category-card__title--center {
 	text-align: center;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: calc(var(--gutter) / -2);
+	margin-right: calc(var(--gutter) / -2);
+}
+
+.flex--25 .flex__item {
+	width: 25%;
+}
+
+.flex__item {
+	padding: calc(var(--gutter) / 2);
+	flex: 0 0 auto;
+}
+
+@media (max-width: 576px) {
+	.flex__item {
+		width: 50% !important;
+	}
+}
+
+.card-product {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: calc(var(--gutter) / 2);
+	border: 1px solid var(--gray);
+	border-radius: calc(var(--gutter) / 2);
+	transition: border-color var(--trs);
+	overflow: hidden;
+}
+
+.card-product:hover {
+	border-color: var(--accent);
+}
+
+.card-product:hover .card-product__image img {
+	transform: scale(1.1);
+}
+
+.card-product__badge {
+	position: absolute;
+	top: calc(var(--gutter) / 2);
+	right: calc(var(--gutter) / 2);
+	background-color: #fa6565;
+	height: 24px;
+	padding: 0 calc(var(--gutter) / 4);
+	border-radius: calc(var(--gutter) / 5);
+	font-weight: 500;
+	color: #fff;
+	z-index: 1;
+}
+
+.category-card__image {
+	overflow: hidden;
+}
+
+.card-product__image {
+	overflow: hidden;
+}
+
+.card-product__image img {
+	transition: transform var(--trs);
+}
+
+.card-product__text {
+	margin: calc(var(--gutter) / 2) 0;
+}
+
+.card-product__title {
+	display: block;
+	text-decoration: none;
+}
+
+.card-product__vendor-name {
+	display: block;
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+}
+
+.card-product__price {
+	display: flex;
+	align-items: flex-end;
+	gap: calc(var(--gutter) / 4);
+	margin-bottom: calc(var(--gutter) / 2);
+	cursor: default;
+}
+
+.card-product__current-price {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.card-product__old-price {
+	text-decoration: line-through;
+	color: #999;
+}
+
+.card-product__button {
+	margin-top: auto;
 }
