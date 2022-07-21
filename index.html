@@ -14,6 +14,8 @@
 
 	<link rel="stylesheet" href="libs/normalize.css/normalize.css">
 
+	<link rel="stylesheet" type="text/css" href="libs/toastify/toastify.min.css">
+
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/footer.css">
 
@@ -688,13 +690,21 @@
 
 			<div class="h3">Новые товары</div>
 
-			<div class="flex flex--25">
+			<div class="flex flex--20">
 
 				<div class="flex__item">
 
 					<div class="card-product">
 
 						<div class="card-product__badge">новый</div>
+
+						<div class="card-product__controls-wrapper">
+
+							<div class="card-product__control card-product__control-wishlist button button--square button--icon button--gray button--sm-small"><i class="fa-solid fa-heart"></i></div>
+
+							<div class="card-product__control card-product__control-compare button button--square button--icon button--gray button--sm-small"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+						</div>
 
 						<div class="card-product__image">
 							<img class="img-responsive" src="images/products/1.jpg" alt="Описание">
@@ -704,7 +714,7 @@
 
 							<a href="#" class="card-product__title link">Cекатор кованный, ручки зеленые, нержавеющая сталь</a>
 
-							<a href="#" class="card-product__vendor-name link">ИП Губимов А. А.</a>
+							<a href="#" class="card-product__vendor-name link">ИП Губимов А. А. ИП Губимов А. А. ИП Губимов А. А.</a>
 
 						</div>
 
@@ -743,8 +753,6 @@
 						<div class="card-product__price">
 
 							<div class="card-product__current-price">1 200р.</div>
-
-							<div class="card-product__old-price">3 500р.</div>
 
 						</div>
 
@@ -1143,7 +1151,28 @@
 
 	</footer>
 
+	<div class="c-alert c-alert--success">
+
+		<div class="c-alert__image"><img class="img-responsive" src="images/products/1.jpg" alt="#"></div>
+
+		<div class="c-alert__wrapper">
+
+			<div class="c-alert__title h4">Товар добавлен в корзину!</div>
+
+			<div class="c-alert__text">Товар <a class="c-alert__link link" href="#">Cекатор кованный, ручки зеленые, нержавеющая сталь</a> добавлен в корзину!</div>
+
+		</div>
+
+		<div class="c-alert__close button button--square button--icon button--sm-small"><i class="fa-solid fa-xmark"></i></div>
+
+	</div>
+	<!-- /.c-alert -->
+
 	<script src="js/common.js"></script>
+
+	<script type="text/javascript" src="libs/toastify/toastify-js.js"></script>
+
+	<script src="js/addCart.js"></script>
 
 </body>
 
