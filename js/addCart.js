@@ -8,7 +8,7 @@ document.addEventListener('click', function (event) {
 
 		const toast = Toastify({
 			node: alert.cloneNode(true),
-			duration: 2,
+			duration: 2500,
 			close: false,
 			escapeMarkup: false,
 			gravity: "top", // `top` or `bottom`
