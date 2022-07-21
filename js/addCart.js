@@ -8,7 +8,7 @@ document.addEventListener('click', function (event) {
 
 		const toast = Toastify({
 			node: alert.cloneNode(true),
-			duration: 300000,
+			duration: 2,
 			close: false,
 			escapeMarkup: false,
 			gravity: "top", // `top` or `bottom`
@@ -23,8 +23,6 @@ document.addEventListener('click', function (event) {
 		const closeToast = document.querySelector('.c-alert__close');
 
 		closeToast.addEventListener('click', () => {
-			console.log(toast);
-
 			toast.hideToast();
 		})
 
